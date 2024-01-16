@@ -1,0 +1,26 @@
+
+.gradient
+{
+    -fx-background-color: linear-gradient(to bottom right, #830808, #d30909);
+}
+
+.white-form
+{
+    -fx-background-color: #fff;
+}
+
+.head-label
+{
+    -fx-border-color: #830808;
+    -fx-border-width: 0 0 0 5px;
+    -fx-padding: 0 0 0 5px;
+}
+
+.login-btn
+{
+    -fx-background-color: linear-gradient(to bottom right, #830808, #d30909);
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-text-fill: WHITE;
+    -fx-font-size: 14px;
+}

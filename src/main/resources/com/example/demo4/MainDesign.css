@@ -1,0 +1,45 @@
+.nav-btn{
+    -fx-background-color: transparent;
+    -fx-border-color: WHITE;
+    -fx-cursor: hand;
+    -fx-text-fill: WHITE;
+    -fx-font-size: 20px;
+}
+.nav-btn:hover{
+    -fx-background-color: WHITE;
+    -fx-text-fill: BLACK;
+}
+.navbtn-back{
+    -fx-background-color: transparent;
+    -fx-text-fill: WHITE;
+    -fx-cursor: hand;
+}
+.white-bg{
+    -fx-background-color: WHITE;
+}
+.radius{
+    -fx-background-radius: 8px;
+}
+.shadow{
+    -fx-effect: dropshadow(three-pass-box,rgb(0, 0, 0, 0.5), 5, 0, 0, 0);
+}
+.table-view{
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-border-color: linear-gradient(to bottom right, #830808, #d30909);
+    -fx-border-radius: 5px;
+    -fx-border-width: 1.5px;
+}
+.table-view.column-header-background{
+    -fx-background-color: linear-gradient(to bottom right, #830808, #d30909);
+    -fx-background-radius: 5px 5px 0 0;
+    -fx-background-insets: 0 0 0 0;
+}
+.table-view.column-header.filter{
+    -fx-background-color: transparent;
+    -fx-size: 40px;
+}
+.table-view.column-header.label{
+    -fx-text-fill: WHITE;
+}
+

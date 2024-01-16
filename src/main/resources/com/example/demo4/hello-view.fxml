@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo4.HelloController">
+   <children>
+      <AnchorPane prefHeight="386.0" prefWidth="411.0">
+         <children>
+            <AnchorPane fx:id="si_loginForm" layoutX="332.0" prefHeight="518.0" prefWidth="332.0" styleClass="white-form" stylesheets="@Test.css">
+               <children>
+                  <Label layoutX="55.0" layoutY="111.0" prefHeight="37.0" prefWidth="139.0" styleClass="head-label" stylesheets="@Test.css" text="Login Account" textFill="#830808">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="si_username" layoutX="65.0" layoutY="178.0" prefHeight="37.0" prefWidth="189.0" promptText="Username" />
+                  <PasswordField fx:id="si_password" layoutX="65.0" layoutY="234.0" prefHeight="37.0" prefWidth="189.0" promptText="Password" />
+                  <Button fx:id="si_loginBtn" layoutX="104.0" layoutY="299.0" mnemonicParsing="false" onAction="#loginBtn" prefHeight="37.0" prefWidth="111.0" styleClass="login-btn" stylesheets="@Test.css" text="Login" />
+                  <Hyperlink fx:id="si_forgotPass" layoutX="65.0" layoutY="276.0" onAction="#switchForgotPass" text="Forgot Password" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="su_signupForm" prefHeight="518.0" prefWidth="332.0" styleClass="white-form" stylesheets="@Test.css">
+               <children>
+                  <Label layoutX="52.0" layoutY="87.0" prefHeight="37.0" prefWidth="151.0" styleClass="head-label" stylesheets="@Test.css" text="Create Account" textFill="#830808">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="su_username" layoutX="52.0" layoutY="153.0" prefHeight="37.0" prefWidth="189.0" promptText="Username" />
+                  <PasswordField fx:id="su_password" layoutX="52.0" layoutY="198.0" prefHeight="37.0" prefWidth="189.0" promptText="Password" />
+                  <Button fx:id="su_signupBtn" layoutX="91.0" layoutY="356.0" mnemonicParsing="false" onAction="#regBtn" prefHeight="37.0" prefWidth="111.0" styleClass="login-btn" stylesheets="@Test.css" text="Sign Up" />
+                  <TextField fx:id="su_age" layoutX="52.0" layoutY="284.0" prefHeight="37.0" prefWidth="189.0" promptText="Age" />
+                  <TextField fx:id="su_favouriteTeam" layoutX="52.0" layoutY="241.0" prefHeight="37.0" prefWidth="189.0" promptText="Favourite Team" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="fp_questionForm" layoutX="332.0" layoutY="4.0" prefHeight="511.0" prefWidth="332.0" styleClass="white-form" stylesheets="@Test.css" visible="false">
+               <children>
+                  <Label layoutX="55.0" layoutY="111.0" prefHeight="37.0" prefWidth="159.0" styleClass="head-label" stylesheets="@Test.css" text="Forgot Password" textFill="#830808">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="fp_proceedBtn" layoutX="111.0" layoutY="289.0" mnemonicParsing="false" onAction="#proceedBtn" prefHeight="37.0" prefWidth="111.0" styleClass="login-btn" stylesheets="@Test.css" text="Proceed" />
+                  <Button fx:id="fp_backBtn" layoutX="118.0" layoutY="452.0" mnemonicParsing="false" onAction="#backToLogin" prefHeight="31.0" prefWidth="97.0" styleClass="login-btn" stylesheets="@Test.css" text="Back" />
+                  <TextField fx:id="fp_username" layoutX="65.0" layoutY="227.0" prefHeight="47.0" prefWidth="202.0" promptText="Username" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="np_newPassForm" layoutX="332.0" layoutY="7.0" prefHeight="511.0" prefWidth="332.0" styleClass="white-form" stylesheets="@Test.css" visible="false">
+               <children>
+                  <Label layoutX="55.0" layoutY="111.0" prefHeight="37.0" prefWidth="159.0" styleClass="head-label" stylesheets="@Test.css" text="Forgot Password" textFill="#830808">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="np_back" layoutX="118.0" layoutY="452.0" mnemonicParsing="false" onAction="#backToQF" prefHeight="31.0" prefWidth="97.0" styleClass="login-btn" stylesheets="@Test.css" text="Back" />
+                  <Button fx:id="np_newChangePassBtn" layoutX="102.0" layoutY="387.0" mnemonicParsing="false" onAction="#changePassBtn" prefHeight="37.0" prefWidth="130.0" styleClass="login-btn" stylesheets="@Test.css" text="Change Password" />
+                  <PasswordField fx:id="np_newPassword" layoutX="54.0" layoutY="223.0" prefHeight="31.0" prefWidth="227.0" promptText="New Password" />
+                  <PasswordField fx:id="np_confirmPassword" layoutX="54.0" layoutY="269.0" prefHeight="31.0" prefWidth="227.0" promptText="Cofirm Password" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="side_form" prefHeight="518.0" prefWidth="332.0" styleClass="gradient" stylesheets="@Test.css">
+               <children>
+                  <Label layoutX="104.0" layoutY="421.0" prefHeight="37.0" prefWidth="139.0" text="Create Account" textAlignment="CENTER" textFill="#fffefe">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="side_CreateBtn" layoutX="105.0" layoutY="458.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="37.0" prefWidth="139.0" styleClass="white-form" stylesheets="@Test.css" text="Create new Account" />
+                  <Label layoutX="135.0" layoutY="191.0" text="F1" textFill="#fcfafa">
+                     <font>
+                        <Font name="Arial Italic" size="68.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="side_alreadyHave" layoutX="106.0" layoutY="458.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="37.0" prefWidth="139.0" styleClass="white-form" stylesheets="@Test.css" text="Create Account" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
